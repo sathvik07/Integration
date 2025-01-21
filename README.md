@@ -37,6 +37,5 @@ Missing piece:
 ----  If you have a moment, could you go through my code to ensure everything is in line with the expectations? I'd love to hear any thoughts you have.
 ---- and also i would like to get confirmed that the API endpoint is correct and accessible.(Because i have received 401 status code)
 
-<img width="1792" alt="Screenshot 2025-01-22 at 1 39 03 AM" src="https://github.com/user-attachments/assets/3d8d9ab3-5c51-4e88-8313-3f64c76ed65f" />
 
 

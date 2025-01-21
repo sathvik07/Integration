@@ -31,7 +31,7 @@ def read_csv():
                 "userId": f"user_{uuid4().hex}",
                 "firstName": row["First Name"],
                 "lastName": row["Last Name"],
-                "emailId": row["Email"],
+                "emailId":  f"{row['First Name'].lower()}.{row['Last Name'].lower()}@happay.in" if row["Email"] == "N/A" or row["Email"] == "" else row["Email"].strip(),
                 "mobileNo": row["Mobile"],
                 "mobile_extension": "+91",
                 "dob": formated_time(row["Date of Birth"]),
@@ -45,6 +45,7 @@ def read_csv():
                 }
 
             }
+            # print(json_data["emailId"])
             converted_data.append(json_data)
             # rows.append([{field[i] : row[field[i]] for i in range(len(field))}])
         json_output_data = json.dumps(converted_data, indent=4)
@@ -91,7 +92,7 @@ def API_Request_to_add_user():
             "userId": "user_dc1a051b1f974929adff44fec6111673",
             "firstName": "Shubham",
             "lastName": "",
-            "emailId": "N/A",
+            "emailId": "shubham.@happay.in",
             "mobileNo": "7184756131",
             "mobile_extension": "+91",
             "dob": "1998-11-28",

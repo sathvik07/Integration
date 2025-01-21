@@ -31,7 +31,7 @@ def read_csv():
                 "userId": f"user_{uuid4().hex}",
                 "firstName": row["First Name"],
                 "lastName": row["Last Name"],
-                "emailId":  f"{row['First Name'].lower()}.{row['Last Name'].lower()}@happay.in" if row["Email"] == "N/A" or row["Email"] == "" else row["Email"].strip(),
+                "emailId":  f"{row['First Name'].lower()}.{row['Last Name'].lower()}@happay.in" if row["Email"] == "N/A" or row["Email"] == "" else row["Email"],
                 "mobileNo": row["Mobile"],
                 "mobile_extension": "+91",
                 "dob": formated_time(row["Date of Birth"]),
